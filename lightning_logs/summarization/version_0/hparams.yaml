@@ -1,0 +1,2 @@
+model_name: facebook/bart-base
+lr: 3.0e-05
