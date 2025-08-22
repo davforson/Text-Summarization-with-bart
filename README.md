@@ -13,22 +13,22 @@ This project demonstrates how modern transformer models like BART can produce hu
 
 ## 🔹 Dataset
 - Source: **DeepLearning.AI NLP course**.
-- Format: JSON file (`test.json`) with the following structure:
-- `text`: original passage
+- Format: JSON files (`train.json`) and (`test.json`) with the following structure:
+- `dialogue`: original passage
 - `summary`: human-written reference summary
 
 
 Example:
 ```json
 {
-"text": "The Apollo 11 mission landed on the moon in 1969...",
+"dialogue": "...The Apollo 11 mission landed on the moon in 1969...",
 "summary": "Apollo 11 landed on the moon in 1969."
 }
 ```
 ---
 
 ## 🔹 Methodology
-1. Load dataset (`test.json`).
+1. Load dataset (`train.json`) and (`test.json`).
 2. Initialize Hugging Face summarization pipeline with `facebook/bart-base`.
 3. Generate summaries for sample passages.
 4. Compare predicted summaries against reference summaries qualitatively.
